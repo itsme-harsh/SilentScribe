@@ -5,8 +5,8 @@ import { User } from "../models/user.model.js";
 import jwt from "jsonwebtoken";
 
 const options = {   
-    // httpOnly: true,
-    // secure: true,
+    httpOnly: true,
+    secure: true,
     // sameSite: "Lax"
 }
 
