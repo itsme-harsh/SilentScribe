@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  user-select: none;
+}
+/* Apply to entire document */
+::-webkit-scrollbar {
+  width: 2px; /* Scrollbar width */
+  height: 3px;
+}
+
+/* Track (background of scrollbar) */
+::-webkit-scrollbar-track {
+  background: #e5e7eb; /* Light mode: gray-200 */
+}
+
+/* Handle (scrollbar itself) */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0); /* Light mode: gray-500 */
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #374151; /* Darker shade */
+}
+
+/* Dark mode styles */
+.dark ::-webkit-scrollbar-track {
+  background: black; /* Dark mode: gray-800 */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: white; /* Dark mode: gray-400 */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #d1d5db; /* Lighter gray */
+}
+
+/* Add blog page css start*/
+.ql-editor {
+  height: 250px !important;
+}
+
+@media (max-width: 768px) {
+  .ql-editor {
+    height: 150px !important;
+  }
+}
+/* Add blog page css end*/
